@@ -177,7 +177,7 @@ public class QUAD {
         return biddings;
     }
 
-    //Implemented sorting algorithm
+    //Implemented sorting algorithm- Merge Sort
     static int partition(double[] biddings,int low,int high){
         double pivot=biddings[high];
         int i=(low-1);
@@ -194,6 +194,7 @@ public class QUAD {
         biddings[high]=temp;
         return i+1;
     }
+    //Sorting in Descending Order
     static int partitiondes(double[] biddings,int low,int high){
         double pivot=biddings[high];
         int i=(low-1);
